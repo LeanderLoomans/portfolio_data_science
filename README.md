@@ -5,8 +5,13 @@ Course: Applied Data Science Minor<br />
 Lecturers: Jeroen Vuurens, Tony Andrioli, Ruud Vermeij
 
 ## DataCamp
+<details> <summary>Evidence of completing DataCamp</summary>
 
-## Resaerch project
+![Images](/Evidence/datacamp_proof.png)
+![Images](/Evidence/datacamp_proof_2.png)
+</details>
+
+## Resaerch project Dialogue detection
 
 ### Task definition
 
