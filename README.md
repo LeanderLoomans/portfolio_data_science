@@ -37,20 +37,20 @@ The problem that the smart teddy bear project aims to tackle is to find the best
   
 |          | Accuracy | Precision | Recall | f1   |
 |----------|----------|-----------|--------|------|
-| Voice    | -        | 0.85      | 0.94   | 0.89 |
-| No Voice | -        | 0.94      | 0.84   | 0.88 |
-| Total    | 0.89     |           |        |      |
+| No voice | -        | 0.85      | 0.94   | 0.89 |
+| Voice    | -        | 0.94      | 0.84   | 0.88 |
+| Total    | 0.89     | -         | -      | -    |
   
   Resutls of the second model
   
-|          | Accuracy | Precision | Recall | f1   |
-|----------|----------|-----------|--------|------|
-| Voice    | -        | 0.96      | 0.92   | 0.94 |
-| No Voice | -        | 0.93      | 0.96   | 0.94 |
-| Total    | 0.94     |           |        |      |
+|               | Accuracy | Precision | Recall | f1   |
+|---------------|----------|-----------|--------|------|
+| Other speaker | -        | 0.96      | 0.92   | 0.94 |
+| Same Voice    | -        | 0.93      | 0.96   | 0.94 |
+| Total         | 0.94     | -         | -      | -    |
   
   As seen in the tabels the models have good results that we as a project group are happy with. These results were gotten on a test set.
-  Now the research question "How can data science techniques detect if there is a conversation between at least two people by analyzing audio files?" can be answered. We did this by making two Convolutional Neural Nerworks (CNN) with Mel Frequency Cepstral Coefficients (MFCC) as input data. The two models are combined so the first model acts as a filter for the second model. The first model filters the audio sampels that have no speech in them and feeds the sampels with speech to the second model. The second model then compares two sampels with each other to see if the sampels are form the same speaker or from a different speaker. 
+  Now the research question "How can data science techniques detect if there is a conversation between at least two people by analyzing audio files?" can be answered. We did this by making two Convolutional Neural Nerworks (CNN) with Mel Frequency Cepstral Coefficients (MFCC) as input data. The two models are combined so the first model acts as a filter for the second model. The first model filters the audio sampels that have no speech in them and feeds the sampels with speech to the second model. The second model then compares two sampels with each other to see if the sampels are form the same speaker or from a different speaker. With this method we worked around a problem we had, that we could not predict how many speakers there are because then we needed a data with a fixed amount of speakers and if the data had more speakers the model would not work. The output of the second model is a 'True' or a 'False'. Where the 'True' stands for Same Speaker and 'False' for Different Speaker. With these labels a conversation can be detected.
   
 </details>
 
