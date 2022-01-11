@@ -50,6 +50,7 @@ The problem that the smart teddy bear project aims to tackle is to find the best
 | Total    | 0.94     |           |        |      |
   
   As seen in the tabels the models have good results that we as a project group are happy with. These results were gotten on a test set.
+  Now the research question "How can data science techniques detect if there is a conversation between at least two people by analyzing audio files?" can be answered. We did this by making two Convolutional Neural Nerworks (CNN) with Mel Frequency Cepstral Coefficients (MFCC) as input data. The two models are combined so the first model acts as a filter for the second model. The first model filters the audio sampels that have no speech in them and feeds the sampels with speech to the second model. The second model then compares two sampels with each other to see if the sampels are form the same speaker or from a different speaker. 
   
 </details>
 
