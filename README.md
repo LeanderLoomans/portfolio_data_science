@@ -95,7 +95,10 @@ The problem that the smart teddy bear project aims to tackle is to find the best
 
 ### Presentations
 - First Internal presentation
-- Forth Internal presentation
+- Seccond Internal presentation
+- Fifth Internal presentation
+- Sixth Internal presenation
+- 9th Internal presentation
 - Last Internal presentation
 - 
 - First External presentation
